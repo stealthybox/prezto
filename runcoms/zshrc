@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+bindkey "\e[1;9C" forward-word
+bindkey "\e[1;9D" backward-word
+bindkey "\ez" undo
