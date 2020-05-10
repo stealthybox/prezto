@@ -63,3 +63,5 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 source /etc/profile
+# disable default behavior in /etc/zsh/zshrc
+export skip_global_compinit=1

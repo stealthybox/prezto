@@ -119,6 +119,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'pure'
+# yellow time on right
+# RPROMPT="%{%F{242}%}%D{%y/%m/%f %l:%M:%S %P}"
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -227,3 +229,10 @@ zstyle ':prezto:module:prompt' theme 'pure'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
+
+
+#### WORKAROUND: VSCode not using aliases sourced from /etc/profile
+alias k=kubectl
+alias ks='kubectl -n kube-system'alias k=kubectl
+alias ks='kubectl -n kube-system'
+alias git=hub
